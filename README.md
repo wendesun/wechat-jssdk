@@ -41,5 +41,36 @@
 });
 ```
 
+6. 分享回调
+```
+wx.ready(function(){
+    //分享到朋友圈
+    wx.onMenuShareTimeline({
+        title: shareInfo.title,
+        link: shareInfo.link,
+        imgUrl: shareInfo.imgUrl,
+        success: function() {
+
+        },
+        cancel: function() {
+
+        }
+    });
+    //分享给朋友
+    wx.onMenuShareAppMessage({
+        title: shareInfo.title,
+        desc: shareInfo.desc,
+        link: shareInfo.link,
+        imgUrl: shareInfo.imgUrl,
+        success: function() {
+
+        },
+        cancel: function() {
+
+        }
+    });
+)}
+```
+
 
 
