@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
+global.params = {
+  appid: 'wxc8363e5bfd9c4c3f',
+  secret: '89ea74340a638c12e7cf822edee6389a'
+};
+
 /**
  * Module dependencies.
  */
-
 var app = require('../app');
 var debug = require('debug')('WeChat-JSSDK:server');
 var http = require('http');
@@ -25,7 +29,9 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port,function(){
+  console.log('HTTP server start, port at '+ (process.env.PORT || "3000"));
+});
 server.on('error', onError);
 server.on('listening', onListening);
 
