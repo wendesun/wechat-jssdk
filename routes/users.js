@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('userInfo',{
+    title: '微信授权获取用户信息'
+  });
 });
 
 module.exports = router;
