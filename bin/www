@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 global.params = {
-  appid: 'wxc8363e5bfd9c4c3f',
-  secret: '89ea74340a638c12e7cf822edee6389a'
+  appid: 'wxb7289add5eeccd94',
+  secret: 'a9f49f6ead1f9a5468215aeecb8daf86'
 };
 
 /**

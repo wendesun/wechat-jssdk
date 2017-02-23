@@ -11,7 +11,7 @@
 
             wx.config({
                 debug: false, 
-                appId: 'wxc8363e5bfd9c4c3f', 
+                appId: 'wxb7289add5eeccd94',
                 timestamp: info.timestamp, 
                 nonceStr: info.nonceStr, 
                 signature: info.signature,
@@ -46,9 +46,11 @@
                     link: shareInfo.link,
                     imgUrl: shareInfo.imgUrl,
                     success: function() {
+                        alert('11111');
 
                     },
                     cancel: function() {
+                        alert('2222222');
 
                     }
                 });
@@ -59,10 +61,11 @@
                     link: shareInfo.link,
                     imgUrl: shareInfo.imgUrl,
                     success: function() {
+                        alert('qqqqqqqqq11111');
 
                     },
                     cancel: function() {
-
+                        alert('qqqqqqqqq12222');
                     }
                 });
                 //分享到腾讯微博
@@ -100,4 +103,5 @@
 
 
     isWx() && wxshare();
+    wxshare();
 })(wx || jWeixin)
